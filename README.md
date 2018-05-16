@@ -1,3 +1,7 @@
+#### ionic动态更改App主图标效果
+![gif]( http://m.qilong.com/Public/newmobile/default/Images/changeicon.gif "DEMO-GIF")
+
+
 iOS平台：
     1.iOS10.3以上才可使用
     2.需要预先配置好icon图标和info.plist资料可查看示例图片规格如下：
