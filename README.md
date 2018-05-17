@@ -1,5 +1,5 @@
 #### ionic动态更改App主图标效果
-![gif]( http://m.qilong.com/Public/newmobile/default/Images/changeicon.gif "DEMO-GIF")
+![gif]( http://m.qilong.com/Public/newmobile/default/Images/iconchange.gif "DEMO-GIF")
 
 
 iOS平台：
