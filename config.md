@@ -1,4 +1,6 @@
-iOS平台：
+
+#### iOS平台:
+
     1.iOS10.3以上才可使用
     2.需要预先配置好icon图标和info.plist资料可查看示例图片规格如下：
         icon尺寸为：@2x = 120×120  @3x = 180×180
@@ -17,8 +19,9 @@ iOS平台：
                     </dict>
                 </dict>
             </dict>
+             
+#### Android平台:
 
-Android平台：
     1.安卓设置后需要等待30秒至1分钟等待时间才会生效替换
     2.需要修改AndroidManifest对应的标签并且预先配置好icon图标可查看示例图片规格如下：
         icon尺寸为：mipmap-mdpi = 48×48  mipmap-hdpi = 96×96  mipmap-xhdpi = 144×144  mipmap-xxhdpi = 256×256 mipmap-xxxhdpi = 512×512
@@ -63,8 +66,9 @@ Android平台：
                     </intent-filter>
                 </activity-alias>
 
-JS调用：
-    iOS有checkSupport方法，安卓没有
+#### JS调用:
+
+    //iOS有checkSupport方法，安卓没有
     IconChangPlugin.checkSupport(success => {
       alert("check success");
     }, error => {
@@ -73,19 +77,20 @@ JS调用：
 
 
     iOS传参：配置好的icon名称
-                        var option = "icon名称"; //传default，既设置回默认图片
+            var option = "icon名称"; //传default，既设置回默认图片
 
-    Android传参：数组     name为配置好的icon名称 
-                        isOn为是否设置此icon，请确保数组里只存在一个true不然会出现问题
-                        var option = [
-                        {
-                            name:"defaultActivity", //defaultActivity为固定写法，既设置回默认图片
-                            isOn:false
-                        },
-                        {
-                            name:"test",
-                            isOn:true
-                        }];
+    Android传参：数组 name为配置好的icon名称 
+            isOn为是否设置此icon，请确保数组里只存在一个true不然会出现问题
+            var option = [
+            {
+                name:"defaultActivity", //defaultActivity为固定写法，既设置回默认图片
+                isOn:false
+            },
+            {
+                name:"test",
+                isOn:true
+            }];
+                        
     IconChangPlugin.changeIcon(option, success => {
         alert("changeIcon success");
     }, error => {
